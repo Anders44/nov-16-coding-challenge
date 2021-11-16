@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-grid slds-box slds-theme_default slds-var-p-around_small">
+        <lightning-record-edit-form objectApiName={objectApiName} record-id={recordId} onsuccess="handleSuccess">
+            <lightning:inputField field-name={name}></lightning-input-field>
+            <lightning-input-field field-name={phone}></lightning-input-field>
+            <lightning-input-field fieldName={website}></lightning-input-field>
+            <lightning-input-field field-name={sla}></lightning-input-field>
+            <lightning-input-field field-name={slaExpiration}></lightning-input-field>
+            <lightning-input-field field-name={slaSerialNumber}></lightninginput-field>
+
+            <lightning-button type="submit" label="Save" variant="brand">
+        </lightning-record-edit-form>
+    </div>
+</template>
